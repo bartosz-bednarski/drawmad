@@ -1,0 +1,145 @@
+@use '../../../styles/mixin.scss';
+.buttonColor {
+  display: block;
+  height: 1.7rem;
+  width: 1.7rem;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid #ececf4;
+  appearance: none;
+  -webkit-appearance: none;
+  &::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 10px;
+  }
+  &::-webkit-color-swatch {
+    border: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.buttonIcon {
+  padding: 0;
+  line-height: 35px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0.25rem;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ececf4;
+  border-radius: 10px;
+  @include mixin.phone {
+    display: block;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: mixin.$lightAqua;
+    @include mixin.phone {
+      background-color: mixin.$bgColor;
+    }
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.buttonText {
+  padding: 0.5rem;
+  line-height: 0.8rem;
+  text-align: center;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 0.8rem;
+  height: 30px;
+  margin: 0.25rem;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ececf4;
+  border-radius: 10px;
+  @include mixin.phone {
+    display: block;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: mixin.$lightAqua;
+    @include mixin.phone {
+      background-color: mixin.$bgColor;
+    }
+  }
+}
+.buttonSelectList {
+  padding: 0;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+  width: fit-content;
+  height: 35px;
+  margin: 0.25rem;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ececf4;
+  background-color: mixin.$gray;
+  border-radius: 10px;
+  @include mixin.phone {
+    display: block;
+  }
+}
+.buttonListItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: white;
+  border: 0px solid white;
+  img {
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: mixin.$lightAqua;
+  }
+}
+.buttonListItemInputFile {
+  display: flex;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  background-color: white;
+  border: 0px solid white;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 16px;
+    height: 16px;
+  }
+  label {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    display: flex;
+    padding: 0.5rem;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      background-color: mixin.$lightAqua;
+    }
+  }
+}

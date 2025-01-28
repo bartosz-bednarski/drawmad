@@ -1,0 +1,38 @@
+@use '../../styles/mixin.scss' as mixin;
+.box {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  top: 30vh;
+  left: 2rem;
+  width: 220px;
+  min-height: 30vh;
+  background-color: red;
+  border-radius: 10px;
+  background-color: mixin.$bgColor;
+  color: black;
+  box-sizing: border-box;
+  border: 2px solid mixin.$gray;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px 1px mixin.$gray;
+  @include mixin.phone {
+    bottom: 0.5rem;
+    min-height: auto;
+    height: fit-content;
+    left: 2vw;
+    width: 96vw;
+    top: unset;
+  }
+}
+.title {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

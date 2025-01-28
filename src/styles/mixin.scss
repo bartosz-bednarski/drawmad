@@ -1,0 +1,9 @@
+$bgColor: white;
+$gray: #ececf4;
+$lightAqua: #cceff6;
+$darkAqua: #3390a3;
+@mixin phone {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}

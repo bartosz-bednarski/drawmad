@@ -1,0 +1,35 @@
+@use '../../../../styles/mixin.scss' as mixin;
+
+.dropdownMenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style-type: none;
+  background-color: mixin.$bgColor;
+  color: black;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 5px;
+  min-width: 10vw;
+  border: 1px solid #ececf4;
+  box-shadow: 1px 1px 1px 1px mixin.$gray;
+  display: flex;
+  flex-direction: column;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: mixin.$lightAqua;
+    cursor: pointer;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

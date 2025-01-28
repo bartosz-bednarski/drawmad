@@ -1,0 +1,19 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.menuTop {
+  z-index: 2;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 2vh;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  padding: 0 2rem;
+  @include mixin.phone {
+    padding: 0 1rem;
+  }
+}

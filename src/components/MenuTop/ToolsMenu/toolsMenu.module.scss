@@ -1,0 +1,17 @@
+@use '../../../styles/mixin.scss' as mixin;
+
+.list {
+  display: block;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px mixin.$gray;
+  border: 2px solid mixin.$gray;
+  background-color: mixin.$bgColor;
+  margin: 0;
+  width: fit-content;
+  @include mixin.phone {
+    padding: 0.5rem 0;
+  }
+}
